@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Data Anonymization Tool</title>
+     <!-- Set Content Security Policy -->
+     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src https://fonts.gstatic.com;">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>Submit File</h2>
+            <input class="input" type="file" id="fileInput" accept=".csv,.xlsx">
+            <button onclick="anonymizeAndRandomize()">Submit</button>
+        </div>
+
+        <div class="right-section">
+            <h2>Feedback and Results</h2>
+            <div id="feedback"></div>
+            <div id="anonymizedResults" contenteditable="false"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
